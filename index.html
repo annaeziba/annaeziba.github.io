@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anna & Ziba Wedding</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav class="nav-menu">
+      <a class="nav-link active" onclick="showSection('home')"  id="nav-home"></a>
+      <a class="nav-link"        onclick="showSection('rsvp')"  id="nav-rsvp"></a>
+      <a class="nav-link"        onclick="showSection('info')"  id="nav-info"></a>
+      <a class="nav-link"        onclick="showSection('stay')"  id="nav-stay"></a>
+      <a class="nav-link"        onclick="showSection('gifts')" id="nav-gifts"></a>
+      <a class="nav-link"        onclick="showSection('about')" id="nav-about"></a>
+    </nav>
+    <div class="lang">
+      <button onclick="setLang('fr')">FR</button>
+      <button onclick="setLang('it')">IT</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1 · HERO -->
+    <section id="home">
+      <div class="hero-bg"></div>
+      <div class="section-inner section-center">
+        <h1>Anna &amp; Ziba</h1>
+        <p id="subtitle" class="subtitle"></p>
+      </div>
+    </section>
+
+    <!-- 2 · RSVP -->
+    <section id="rsvp">
+      <div class="section-inner section-center">
+        <p id="rsvpEyebrow" class="eyebrow"></p>
+        <h2 id="rsvpTitle"></h2>
+        <p id="rsvpSub" class="body-lg"></p>
+        <a id="rsvpLink" href="#" target="_blank" class="btn"></a>
+      </div>
+    </section>
+
+    <!-- 3 · INFO -->
+    <section id="info">
+      <div class="section-inner">
+        <h2 id="infoTitle"></h2>
+        <dl class="info-list">
+          <div class="info-row">
+            <dt id="churchLabel" class="eyebrow"></dt>
+            <dd id="churchInfo"></dd>
+            <dd id="churchTime"></dd>
+            <dd><a id="churchMap" class="map-link" href="#" target="_blank" rel="noopener"></a></dd>
+            <dd class="access-note" id="accessNote"></dd>
+          </div>
+          <div class="info-row">
+            <dt id="venueLabel" class="eyebrow"></dt>
+            <dd id="venueInfo"></dd>
+            <dd><a id="venueMap" class="map-link" href="#" target="_blank" rel="noopener"></a></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 4 · STAY -->
+    <section id="stay">
+      <div class="section-inner stay-inner">
+        <h2 id="stayTitle" class="stay-heading"></h2>
+        <div id="hotelList" class="gift-grid stay-grid"></div>
+
+        <h2 id="howToGet" class="stay-heading"></h2>
+        <a id="trenordLink" class="trenord-link" href="https://www.trenord.it/" target="_blank" rel="noopener"></a>
+        <div id="travelRoutes" class="travel-routes"></div>
+      </div>
+    </section>
+
+    <!-- 5 · GIFTS -->
+    <section id="gifts">
+      <div class="section-inner">
+        <h2 id="giftsTitle"></h2>
+        <p id="giftIntro" class="gift-intro"></p>
+        <div class="gift-iban">
+
+          <div class="gift-iban-card">
+            <div class="gift-iban-title">
+              Anna Colli
+            </div>
+
+            <div class="gift-iban-value">
+              IBAN: IT00 XXXX XXXX XXXX XXXX
+            </div>
+
+            <div class="gift-iban-bic">
+              BIC : 
+            </div>
+          </div>
+
+          <div class="gift-iban-card">
+            <div class="gift-iban-title">
+              Matteo Zibardi
+            </div>
+
+            <div class="gift-iban-value">
+              IBAN: IT00 YYYY YYYY YYYY YYYY
+            </div>
+
+            <div class="gift-iban-bic">
+              BIC : 
+            </div>
+          </div>
+
+        </div>
+        <div class="gift-carousel-wrap">
+          <button class="carousel-arrow carousel-arrow--prev" id="giftPrev" aria-label="Previous">&#8249;</button>
+          <button class="carousel-arrow carousel-arrow--next" id="giftNext" aria-label="Next">&#8250;</button>
+          <div id="giftList" class="gift-carousel"></div>
+          <div class="gift-carousel-overlay">
+            <span class="swipe-hint" id="swipeHint">&#8592;&ensp;swipe&ensp;&#8594;</span>
+            <div class="gift-carousel-dots" id="giftDots"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · ABOUT -->
+    <section id="about">
+      <div class="section-inner section-center">
+        <h2 id="aboutTitle"></h2>
+        <div class="timeline-wrapper">
+
+          <button id="timelinePrev" class="timeline-arrow">
+            ←
+          </button>
+
+          <div class="love-timeline">
+
+            <div class="timeline-item">
+              <div class="timeline-year">2019</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2020.JPG" alt="">
+                <div class="timeline-caption">
+                  Notre première rencontre ❤️
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2021</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2021-2.JPG" alt="">
+                <div class="timeline-caption">
+                  Notre premier voyage ensemble ✈️
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2021</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2021-3.JPG" alt="">
+                <div class="timeline-caption">
+                  Un souvenir inoubliable 🌅
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2022</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2022-1.JPG" alt="">
+                <div class="timeline-caption">
+                  La demande en mariage 💍
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2022</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2022-2.JPEG" alt="">
+                <div class="timeline-caption">
+                  La demande en mariage 💍
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2023</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2023-1.jpeg" alt="">
+                <div class="timeline-caption">
+                  La demande en mariage 💍
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2023</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2023-2.jpg" alt="">
+                <div class="timeline-caption">
+                  La demande en mariage 💍
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2024</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2024.jpeg" alt="">
+                <div class="timeline-caption">
+                  La demande en mariage 💍
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2025</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2025.JPEG" alt="">
+                <div class="timeline-caption">
+                  La demande en mariage 💍
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2026</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2026-1.jpg" alt="">
+                <div class="timeline-caption">
+                  Notre première rencontre ❤️
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-year">2026</div>
+
+              <div class="timeline-photo">
+                <img src="photos-nous/2026.JPEG" alt="">
+                <div class="timeline-caption">
+                  Notre première rencontre ❤️
+                </div>
+              </div>
+            </div>
+            
+
+          </div>
+        
+          <button id="timelineNext" class="timeline-arrow">
+            →
+          </button>
+
+        </div>
+
+        <p id="aboutText" class="body-lg"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="footer-names">Anna &amp; Ziba</span>
+    <span class="footer-divider">·</span>
+    <span id="footerDate"></span>
+    <span class="footer-divider">·</span>
+    <span id="footerChurch"></span>
+    <span class="footer-divider">·</span>
+    <span id="footerVenue"></span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
