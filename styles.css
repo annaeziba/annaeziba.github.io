@@ -269,7 +269,7 @@ section:nth-child(even) { background: var(--white); }
 .info-list {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1rem;
 }
 
 .info-row { display: flex; flex-direction: column; gap: 0.3rem; }
