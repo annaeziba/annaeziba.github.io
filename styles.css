@@ -89,6 +89,13 @@ p, dd, li {
   color: var(--gold);
   margin-bottom: 0.5rem;
 }
+.eyebrow-alt {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.20em;
+  color: var(--gold);
+  margin-bottom: 0.3rem;
+}
 
 a { color: inherit; text-decoration: none; }
 
