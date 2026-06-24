@@ -53,6 +53,14 @@ h2 {
   margin-bottom: 2.5rem;
   color: var(--ink);
 }
+h2.title-nous {
+  font-size: var(--h2);
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 0.5;
+  margin-bottom: 0.8rem;
+  color: var(--ink);
+}
 
 /* Sub-heading (gift names etc.) */
 h3 {
