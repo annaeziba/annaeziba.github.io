@@ -63,7 +63,7 @@ const data = {
   },
 
   it: {
-    nav: { home: "Home", rsvp: "RSVP", info: "Info", stay: "Soggiorno", gifts: "Lista", about: "Noi" },
+    nav: { home: "Home", rsvp: "RSVP", info: "Info", stay: "Arrivo", gifts: "Lista", about: "Noi" },
     mapLink: "Vedi su Maps →",
 
     subtitle:   "24 ottobre 2026 • Varese, Italia",
