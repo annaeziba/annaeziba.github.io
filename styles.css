@@ -757,7 +757,7 @@ footer span {
 /* ─────────────────────────────────────────
    RESPONSIVE
 ───────────────────────────────────────── */
-@media (max-width: 300px) {
+@media (max-width: 600px) {
   header { padding: 0 20px; }
   .nav-menu { gap: 20px; }
   .section-inner { padding: 0 24px; }
@@ -767,7 +767,14 @@ footer span {
   footer span:not(.footer-names):not(:first-child) { display: none; }
   .footer-names { display: block !important; }
 }
+.gift-slide {
+    grid-template-rows: 100px 260px;
+  }
 
+  .gift-slide__photo {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 .carousel-arrow {
   position: absolute;
   top: 50%;
