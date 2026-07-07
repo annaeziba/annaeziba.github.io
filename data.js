@@ -26,7 +26,7 @@ const data = {
     accessNote: [
       "🏔️ L'église se trouve en hauteur — le dernier tronçon se fait à pied sur un chemin pavé.",
       "🛗 Un ascenseur est disponible depuis le parking pour ceux qui en ont besoin.",
-      "🅿️ Les places de stationnement sont limitées. Nous envisageons d'organiser des navettes depuis le lieu de réception jusqu'à l'église (aller-retour). Si vous êtes intéressé·e, merci de l'indiquer dans le formulaire RSVP.",
+      "🅿️ Les places de stationnement sont limitées. Nous envisageons d'organiser des navettes depuis le lieu de réception jusqu'à l'église (aller-retour). Si vous êtes intéressé·es, merci de l'indiquer dans le formulaire RSVP.",
     ],
     venueLabel:  "Réception",
     venue:       "Istituto De Filippi, Varese",
