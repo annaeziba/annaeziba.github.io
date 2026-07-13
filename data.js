@@ -16,7 +16,7 @@ const data = {
 
     rsvpEyebrow: "Répondre",
     rsvpTitle:   "Serez-vous là ?",
-    rsvpSub:     "Faites-nous savoir avant le 1er septembre 2026.",
+    rsvpSub:     "Faites-nous savoir avant le 25 août 2026.",
     rsvpBtn:     "Confirmer",
 
     infoTitle:   "Informations",
@@ -71,7 +71,7 @@ const data = {
     rsvp: "https://forms.gle/m83yreZxVGcN8cgx7",
     rsvpEyebrow: "Rispondere",
     rsvpTitle:   "Ci sarai?",
-    rsvpSub:     "Facci sapere entro il 1° settembre 2026.",
+    rsvpSub:     "Facci sapere entro il 25 agosto 2026.",
     rsvpBtn:     "Confermare",
 
     infoTitle:   "Informazioni",
